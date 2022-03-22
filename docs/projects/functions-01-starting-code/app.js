@@ -100,4 +100,4 @@ startGameBtn.addEventListener('click', () => {
   alert(message);
   gameIsRunning = false;
   console.log(winner);
-});  
+});
