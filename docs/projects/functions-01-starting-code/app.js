@@ -100,45 +100,4 @@ startGameBtn.addEventListener('click', () => {
   alert(message);
   gameIsRunning = false;
   console.log(winner);
-}); 
-
-
-// not Related to 
-
-const sumUp = (resultHandler, ...numbers) => {
-  const validateNumber = (number) => {
-    return isNaN(number) ? 0: number;
-  };
-
-  let sum = 0;
-  for (const num of numbers) {
-    sum += validateNumber(num);
-  }
-  resultHandler(sum, );
-};
-
-// arguments of function dont use it.
-// const subtractUp = function() {
-//   let sum = 0;
-//   for (const num of arguments) {  
-//     sum -= num;
-//   }
-//   return sum;
-// };
-
-// const subtractUp = function(resultHandler, ...numbers) {
-//   let sum = 0;
-//   for (const num of numbers) {  
-//     sum -= num;
-//   }
-//   resultHandler(sum);
-// };
-
-const showResult = (result, messageText) => {
-  alert(messageText + ' ' + result);
-};
-
-
-sumUp(showResult, 1, 5, 10, -3, 6, 10);
-sumUp(showResult, 5, 10, -3, 6, 10);
-subtractUp(showResult, 5, 10, -3, 6);
+});  
